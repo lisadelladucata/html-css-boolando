@@ -1,19 +1,110 @@
 /*-----------
 RESET
 ------------*/
-
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 /*-----------
 GENERAL
 -------------*/
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+}
+
+/*------------
+DEBUG
+-------------*/
+header{
+    background-color: #add8e6;
+}
+
+.logo, .main-nav, .icone{
+    background-color: #daa520;
+    border: 1px dashed black;
+}
+
+.container .left-col{
+    min-height: 400px;
+    background-color: aqua;
+    border: 1px dashed black;
+}
+
+.container .center-col{
+    min-height: 400px;
+    background-color: rebeccapurple;
+    border: 1px dashed black;
+}
+
+.container .right-col{
+    min-height: 400px;
+    background-color: magenta;
+    border: 1px dashed black;
+}
+
+footer{
+    background-color: chartreuse;
+}
+
+.container .copyright{
+    min-height: 200px;
+    background-color: coral;
+    border: 1px dashed black;
+}
+
+.container .social{
+    min-height: 200px;
+    background-color: gold;
+    border: 1px dashed black;
+}
 
 /*------------
 HEADER
 --------------*/
+header > .container {
+    display: flex;
+}
 
+header .logo,
+header .main-nav,
+header .icone {
+    padding: 10px;
+}
+
+header .main-nav, header .icone {
+    width: 20%;
+}
+
+header .logo {
+    width: 80%;
+}
 /*-------------
 MAIN
 ---------------*/
 
+.container .left-col{
+    width: 33%;
+}
+
+.container .center-col{
+    width: 33%;
+}
+
+.container .right-col{
+    width: 33%;
+}
+
 /*-------------
 FOOTER
 ---------------*/
+
+.container .copyright{
+    width: 50%;
+}
+
+.container .social{
+    width: 50%;
+}
