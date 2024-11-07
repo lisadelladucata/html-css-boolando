@@ -18,14 +18,11 @@ GENERAL
 /*------------
 DEBUG
 -------------*/
-header{
-    background-color: #add8e6;
-}
 
-.logo, .main-nav, .icone{
+/* .logo, .main-nav, .icone{
     background-color: #daa520;
     border: 1px dashed black;
-}
+} */
 
 .container .left-col{
     min-height: 400px;
@@ -64,6 +61,10 @@ footer{
 /*------------
 HEADER
 --------------*/
+header{
+    background-color: #ff6900;
+}
+
 header > .container {
     display: flex;
 }
@@ -78,8 +79,30 @@ header .main-nav, header .icone {
     width: 20%;
 }
 
-header .logo {
+header img {
+    width: 10%;
+}
+
+header .logo{
     width: 80%;
+    text-align: center;
+}
+
+header .icone{
+    text-align: right;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+}
+
+.main-nav ul a {
+    text-decoration: none;
+    color: inherit;
 }
 /*-------------
 MAIN
@@ -101,6 +124,9 @@ MAIN
 FOOTER
 ---------------*/
 
+footer{
+    background-color: #1a1a1a;
+}
 .container .copyright{
     width: 50%;
 }
