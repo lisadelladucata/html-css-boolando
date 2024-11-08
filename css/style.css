@@ -178,3 +178,30 @@ footer h3{
 footer img{
     width: 5%;
 }
+
+.sconto{
+    max-width: 50px;
+    background-color: red;
+    color: white;
+    padding-left: 10px;
+    position: relative;
+    bottom: 50px;
+}
+
+.sostenibilità{
+    max-width: 100px;
+    background-color: green;
+    color: white;
+    padding-left: 10px;
+    position: relative;
+    bottom: 50px;
+}
+
+.heart{
+    max-width: 30px;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    top: 80px;
+    left: 320px;
+}
