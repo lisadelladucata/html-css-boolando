@@ -1,207 +1,196 @@
-/*-----------
-RESET
-------------*/
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+/*----------------
+    DEBUG
+------------------*/
+/* .container {
+    border: 2px dashed blueviolet;
 }
-/*-----------
-GENERAL
--------------*/
+.row .col {
+    border: 2px dashed lightcoral;
+    background-color: rgba(240, 128, 128, 0.2);
+    min-height: 200px;
+} */
+/*----------------
+    RESET
+------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*----------------
+    COMMONS
+------------------*/
+img {
+    max-width: 100%;
+}
+/*----------------
+    LAYOUT
+------------------*/
 .container {
     max-width: 1200px;
     margin: auto;
     display: flex;
 }
-
-body{
-    font-family: 'Roboto', sans-serif;
+.row {
+    display: flex;
 }
 
-/*------------
-DEBUG
--------------*/
-
-/* .logo, .main-nav, .icone{
-    background-color: #daa520;
-    border: 1px dashed black;
-} */
-
-/* .container .left-col{
-    min-height: 400px;
-    background-color: aqua;
-    border: 1px dashed black;
+.gap-30 {
+    gap: 30px;
+}
+.col {
+    flex-grow: 1;
+    width: calc(100% /3);
 }
 
-.container .center-col{
-    min-height: 400px;
-    background-color: rebeccapurple;
-    border: 1px dashed black;
+
+/*----------------
+    TYPOGRAPHY
+------------------*/
+
+body {
+    font-family: "Roboto", serif;
 }
 
-.container .right-col{
-    min-height: 400px;
-    background-color: magenta;
-    border: 1px dashed black;
-}
- */
-/* footer{
-    background-color: chartreuse;
-}
-
-.container .copyright{
-    min-height: 200px;
-    background-color: coral;
-    border: 1px dashed black;
-}
-
-.container .social{
-    min-height: 200px;
-    background-color: gold;
-    border: 1px dashed black;
-} */
-
-/*------------
-HEADER
---------------*/
+/*----------------
+    HEADER
+------------------*/
 header{
     background-color: #ff6900;
 }
 
-header > .container {
-    display: flex;
-}
-
-header .logo,
-header .main-nav,
-header .icone {
-    padding: 10px;
-}
-
-header .main-nav, header .icone {
-    width: 20%;
-}
-
-header img {
-    width: 10%;
-}
-
-header .logo{
-    width: 80%;
-    text-align: center;
-}
-
-header .icone{
-    text-align: right;
-}
-
-.main-nav ul {
+ul{
     list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    color: white;
-}
-
-.main-nav ul a {
-    text-decoration: none;
-    color: inherit;
-}
-/*-------------
-MAIN
----------------*/
-section img{
-    width: 100%;
-    padding: 50px 50px 5px 0px;
-}
-
-section div{
-    width: 80%;
-}
-
-figcaption p{
-   font-style: italic;
-}
-
-section span{
-    color: black;
-    padding: 5px 5px 30px 0px;
-    text-decoration: line-through;
-}
-
-.left-col>p,
-.center-col>p,
-.right-col>p {
-    color: red;
-    padding: 5px 5px 30px 0px;
-}
-/*-------------
-FOOTER
----------------*/
-
-footer{
-    background-color: #1a1a1a;
-}
-.container .copyright{
-    width: 50%;
-    flex-direction: column;
-}
-
-footer ul{
-    list-style: none;
+    color: #fff;
     display: flex;
     gap: 10px;
 }
 
-footer ul a {
+a{
     text-decoration: none;
     color: inherit;
+    padding: 10px 0px;
 }
 
-footer .copyright{
-    color: white;
-    padding: 20px 0px;
+header .logo img{
+    width: 125px;
+    height: 30px;
 }
 
-footer h3{
-    font-size: 30px;
+.icons i{
+    color: #fff;
+    padding: 0px 5px;
 }
 
-.container .social{
-    width: 50%;
-    padding: 20px 0px;
-    text-align: right;
-    color: white;   
+.nav-bar , .icons{
+    width: 20%;
+    padding: 15px 0px;
 }
 
-footer img{
-    width: 5%;
+.icons, .social{
+    text-align: right
 }
 
-.sconto{
-    max-width: 50px;
-    background-color: red;
-    color: white;
-    padding-left: 10px;
-    position: relative;
-    bottom: 50px;
+.logo{
+    width: 60%;
+    padding: 10px;
+    text-align: center;
 }
 
-.sostenibilità{
-    max-width: 100px;
-    background-color: green;
-    color: white;
-    padding-left: 10px;
-    position: relative;
-    bottom: 50px;
+
+/*----------------
+    MAIN
+------------------*/
+
+.products{
+    padding: 50px 0px;
+}
+
+section .container{
+    display: block;
 }
 
 .heart{
-    max-width: 30px;
-    background-color: white;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
     text-align: center;
+    line-height: 50px;
+    font-size: 35px;
+}
+
+.tag{
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+}
+
+.discount{
+    background-color: red;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.sustainability{
+    background-color: green;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.product-img {
     position: relative;
-    top: 80px;
-    left: 320px;
+}
+.product-img img {
+    width: 100%;
+    display: block;
+}
+.product-img:hover .hover {
+    display: block;
+}
+.product-img:hover .default {
+    display: none;
+}
+
+.product-img .hover {
+    display: none;
+}
+
+.product-info span:first-of-type{
+    color: red;
+}
+
+.product-info span:last-of-type{
+    text-decoration: line-through;
+}
+
+/*----------------
+    FOOTER
+------------------*/
+footer{
+    background-color: #1a1a1a;
+}
+
+.copyright p{
+    color: #fff;
+    padding: 10px 0px;
+    font-weight: bold;
+}
+
+.social p{
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+
+.social i{
+    color: #fff;
+    padding: 0px 5px;
+}
+
+footer .container{
+    justify-content: space-between;
+    padding: 30px 0px;
 }
